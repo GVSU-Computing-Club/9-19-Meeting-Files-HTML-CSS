@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My Title</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+      <h1> The Number of Time's I've eaten pizza</h1>
+      <p id="counter">0</p>
+
+      <hr/>
+      <img src="pizza.jpg" alt="Pizza is my life. No pizza, no life" height="100" width="100">
+      <br>
+      <button onclick="Add1()"> Pizza time </button>
+    </body>
+
+    <script>
+        
+        function Add1() {
+            var number = document.getElementById("counter").innerHTML; //Getting the Number 
+            number++; //Adding 1 to number
+            document.getElementById("counter").innerHTML = number; //Setting the number
+        }
+    </script>
+</html>

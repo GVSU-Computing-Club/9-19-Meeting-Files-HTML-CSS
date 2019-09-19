@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My Title</title>
+        <link rel="stylesheet" href="main.css">
+        <style> 
+            #counter {
+                font: monospace;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 style="color: blue">Number of times I ate a pizza</h1>
+
+        <hr/ >
+        <img src="image.jpg" alt="This is my pizza, no one else can have it"></img>
+        <p id="counter">0</p>
+
+        <button onclick="Add1()">Pizza Time</button> 
+    </body>
+
+    <script>
+        function Add1() {
+            var number = document.getElementById("counter").innerHTML;
+            console.log(number);
+            number++;
+            console.log(number);
+            document.getElementById("counter").innerHTML = number;
+        }
+    </script> 
+</html>
